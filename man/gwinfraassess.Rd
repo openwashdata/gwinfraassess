@@ -3,7 +3,7 @@
 \docType{data}
 \name{gwinfraassess}
 \alias{gwinfraassess}
-\title{The Groundwater Monitoring Infrastructure Assessment Dataset (2022)}
+\title{The Groundwater Monitoring Infrastructure Assessment Dataset, Nkhotakota - Malawi (2022)}
 \format{
 A tibble with 123 rows and 40 variables
 \describe{
