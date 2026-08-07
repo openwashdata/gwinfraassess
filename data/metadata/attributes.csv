@@ -1,0 +1,41 @@
+directory,file_name,variable_name,variable_type,description
+data/,gwinfraassess.rda,submitted_on,character,Date and time the assessment record was submitted.
+data/,gwinfraassess.rda,level_measurable,character,Indicates whether the groundwater level could be measured.
+data/,gwinfraassess.rda,measure_reason,character,Reason why the groundwater level could not be measured.
+data/,gwinfraassess.rda,well_depth,numeric,Measured depth of the monitoring well.
+data/,gwinfraassess.rda,depth_unit,character,Unit of measurement for well depth.
+data/,gwinfraassess.rda,depth_over100,character,Indicates whether the well depth exceeds 100 meters.
+data/,gwinfraassess.rda,endcap_available,character,Indicates whether the monitoring well end cap is present.
+data/,gwinfraassess.rda,measure_method,character,Method used to measure the groundwater level.
+data/,gwinfraassess.rda,measure_datum,character,Reference datum used for groundwater level measurements.
+data/,gwinfraassess.rda,casing_length,numeric,Length of well casing extending above ground level.
+data/,gwinfraassess.rda,casing_unit,character,Unit of measurement for casing length.
+data/,gwinfraassess.rda,static_level,numeric,Measured static groundwater level.
+data/,gwinfraassess.rda,level_unit,character,Unit of measurement for static groundwater level.
+data/,gwinfraassess.rda,logger_available,character,Indicates whether a groundwater level logger is installed.
+data/,gwinfraassess.rda,logger_not_available_reason,character,Reason why a groundwater level logger is not available.
+data/,gwinfraassess.rda,logger_type,character,Type or model of the installed groundwater level logger.
+data/,gwinfraassess.rda,logger_depth,numeric,Installation depth of the groundwater level logger.
+data/,gwinfraassess.rda,logger_unit,character,Unit of measurement for logger installation depth.
+data/,gwinfraassess.rda,logger_download,character,Indicates whether data were successfully downloaded from the groundwater level logger.
+data/,gwinfraassess.rda,download_problem_reason,character,Reason why logger data could not be downloaded.
+data/,gwinfraassess.rda,barlogger_available,character,Indicates whether a barometric logger is installed.
+data/,gwinfraassess.rda,barlogger_download,character,Indicates whether data were successfully downloaded from the barometric logger.
+data/,gwinfraassess.rda,traditional_authority,character,Traditional Authority where the monitoring well is located.
+data/,gwinfraassess.rda,district,character,Administrative district where the monitoring well is located.
+data/,gwinfraassess.rda,dipper_available,character,Indicates whether a manual water level dipper is available.
+data/,gwinfraassess.rda,dipper_condition,character,Physical condition of the manual water level dipper.
+data/,gwinfraassess.rda,dipper_problem,character,Problem identified with the manual water level dipper.
+data/,gwinfraassess.rda,ppe_available,character,Indicates whether personal protective equipment is available for monitoring activities.
+data/,gwinfraassess.rda,community_sensitized,character,Indicates whether the surrounding community has been informed about the purpose of the monitoring well.
+data/,gwinfraassess.rda,well_purpose,character,Primary purpose of the groundwater monitoring well.
+data/,gwinfraassess.rda,vandalism_reason,character,Reported reason why the monitoring well may be vandalized or damaged.
+data/,gwinfraassess.rda,vandal_other,character,Other reported reason for vandalism or damage.
+data/,gwinfraassess.rda,vandal_control,character,Suggested strategy for preventing vandalism or damage to the monitoring well.
+data/,gwinfraassess.rda,control_other,character,Other suggested strategy for preventing vandalism or damage.
+data/,gwinfraassess.rda,site_importance,character,Strategic importance of the monitoring well location.
+data/,gwinfraassess.rda,importance_other,character,Other description of the site's strategic importance.
+data/,gwinfraassess.rda,site_accessible,character,Indicates whether the monitoring well site is easily accessible.
+data/,gwinfraassess.rda,potable_access,character,Indicates whether the surrounding community has access to a potable water supply.
+data/,gwinfraassess.rda,source_type,character,Primary type of water source used by the surrounding community.
+data/,gwinfraassess.rda,improvement_plan,character,Recommended actions to improve the monitoring well and its associated infrastructure.
