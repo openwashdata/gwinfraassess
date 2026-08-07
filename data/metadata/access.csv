@@ -1,0 +1,3 @@
+fileName,name,contentUrl,encodingFormat
+gwinfraassess.csv,gwinfraassess,https://raw.githubusercontent.com/openwashdata/gwinfraassess/main/inst/extdata/gwinfraassess.csv,csv
+gwinfraassess.xlsx,gwinfraassess,https://raw.githubusercontent.com/openwashdata/gwinfraassess/main/inst/extdata/gwinfraassess.xlsx,ooxml
