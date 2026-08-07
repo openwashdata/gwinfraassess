@@ -25,7 +25,7 @@ knitr::opts_chunk$set(
 # The Groundwater Monitoring Infrastructure Assessment Dataset, Nkhotakota - Malawi (2022)
 
 <!-- badges: start -->
-
+[![DOI](https://zenodo.org/badge/1326500897.svg)](https://doi.org/10.5281/zenodo.21839342)
 [![License: CC BY
 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
