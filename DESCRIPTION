@@ -1,5 +1,5 @@
 Package: gwinfraassess
-Title: The Groundwater Monitoring Infrastructure Assessment Dataset (2022)
+Title: The Groundwater Monitoring Infrastructure Assessment Dataset, Nkhotakota - Malawi (2022)
 Version: 0.0.0.9000
 Authors@R: c(
     person("Emmanuel", "Mhango", , "emmanuellmhango@gmail.com", role = c("aut", "cre"),

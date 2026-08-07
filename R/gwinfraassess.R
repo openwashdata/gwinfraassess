@@ -1,4 +1,4 @@
-#' The Groundwater Monitoring Infrastructure Assessment Dataset (2022)
+#' The Groundwater Monitoring Infrastructure Assessment Dataset, Nkhotakota - Malawi (2022)
 #'
 #' The Groundwater Monitoring Infrastructure Assessment Dataset (2022) is an open dataset published by BASEflow Malawi. The dataset contains field observations collected during an assessment of groundwater monitoring infrastructure in Nkhotakota District, Malawi. It includes information on monitoring well characteristics, groundwater level measurements, monitoring equipment, site accessibility, infrastructure condition, community awareness, and recommended maintenance and rehabilitation actions.
 #'

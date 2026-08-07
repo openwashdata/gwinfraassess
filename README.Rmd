@@ -1,0 +1,209 @@
+---
+output: github_document
+always_allow_html: true
+editor_options: 
+  markdown: 
+    wrap: 72
+  chunk_output_type: console
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%",
+  message = FALSE,
+  warning = FALSE,
+  fig.retina = 2,
+  fig.align = 'center'
+)
+```
+
+# The Groundwater Monitoring Infrastructure Assessment Dataset, Nkhotakota - Malawi (2022)
+
+<!-- badges: start -->
+
+[![License: CC BY
+4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+
+<!-- badges: end -->
+
+The Groundwater Monitoring Infrastructure Assessment Dataset (2022) is
+an open dataset published by BASEflow Malawi. The dataset contains field
+observations collected during an assessment of groundwater monitoring
+infrastructure in Nkhotakota District, Malawi in 2022. It includes
+information on monitoring well characteristics, groundwater level
+measurements, monitoring equipment, site accessibility, infrastructure
+condition, community awareness, and recommended maintenance and
+rehabilitation actions.
+
+The dataset captures key attributes of groundwater monitoring sites,
+including well depth, static groundwater level, measurement methods,
+level logger and barometric logger availability, equipment condition,
+site accessibility, monitoring well purpose, vandalism risks, nearby
+water source types, and infrastructure improvement recommendations.
+Together, these data provide a comprehensive assessment of the
+operational status and maintenance needs of groundwater monitoring
+infrastructure in the study area.
+
+This dataset supports evidence-based groundwater management and can be
+used to evaluate the condition of monitoring infrastructure, identify
+maintenance priorities, strengthen groundwater monitoring networks, and
+support sustainable groundwater resource management in Malawi.
+
+**Potential Use Cases**
+
+The dataset is suitable for use by:
+
+1.  Government ministries and water authorities responsible for
+    groundwater monitoring and water resources management.
+
+2.  Researchers and universities conducting studies in hydrogeology,
+    groundwater monitoring, climate resilience, and environmental
+    management.
+
+3.  Development partners and non-governmental organizations implementing
+    groundwater and water security programmes.
+
+4.  Hydrogeologists and groundwater professionals assessing monitoring
+    network performance and infrastructure condition.
+
+5.  GIS analysts and data scientists developing spatial analyses,
+    dashboards, and predictive models for groundwater monitoring.
+
+6.  Policy makers supporting groundwater governance, infrastructure
+    planning, and investment decisions.
+
+7.  Students undertaking research in groundwater, environmental science,
+    civil engineering, and water resources.
+
+8.  Organizations contributing to Sustainable Development Goal 6 (Clean
+    Water and Sanitation), integrated water resources management, and
+    climate adaptation initiatives.
+
+## Installation
+
+You can install the development version of gwinfraassess from
+[GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("openwashdata/gwinfraassess")
+```
+
+```{r}
+## Run the following code in console if you don't have the packages
+## install.packages(c("dplyr", "knitr", "readr", "stringr", "gt", "kableExtra"))
+library(dplyr)
+library(knitr)
+library(readr)
+library(stringr)
+library(gt)
+library(kableExtra)
+```
+
+Alternatively, you can download the individual datasets as a CSV or XLSX
+file from the table below.
+
+1.  Click Download CSV. A window opens that displays the CSV in your
+    browser.
+2.  Right-click anywhere inside the window and select "Save Page As...".
+3.  Save the file in a folder of your choice.
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+
+extdata_path <- "https://github.com/openwashdata/gwinfraassess/raw/main/inst/extdata/"
+
+read_csv("data-raw/dictionary.csv") |> 
+  distinct(file_name) |> 
+  dplyr::mutate(file_name = str_remove(file_name, ".rda")) |> 
+  dplyr::rename(dataset = file_name) |> 
+  mutate(
+    CSV = paste0("[Download CSV](", extdata_path, dataset, ".csv)"),
+    XLSX = paste0("[Download XLSX](", extdata_path, dataset, ".xlsx)")
+  ) |> 
+  knitr::kable()
+
+```
+
+## Data
+
+The package provides access to The Groundwater Monitoring Infrastructure Assessment Dataset collected by BASEflow in 2022, in Nkhotakota district.
+
+```{r}
+library(gwinfraassess)
+```
+
+### gwinfraassess
+
+The dataset `gwinfraassess` contains 
+`r nrow(gwinfraassess)` observations and `r ncol(gwinfraassess)`
+variables
+
+```{r}
+gwinfraassess |> 
+  head(3) |> 
+  gt::gt() |>
+  gt::as_raw_html()
+```
+
+For an overview of the variable names, see the following table.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+readr::read_csv("data-raw/dictionary.csv") |>
+  dplyr::filter(file_name == "gwinfraassess.rda") |>
+  dplyr::select(variable_name:description) |> 
+  knitr::kable() |> 
+  kableExtra::kable_styling("striped") |> 
+  kableExtra::scroll_box(height = "200px")
+```
+
+## Example
+
+```{r}
+library(gwinfraassess)
+
+# Visualization: Improvement Recommendations
+# libraries
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(stringr)
+
+#filter rows where improvement_plan is NA or null
+improve_plot <-
+  gwinfraassess %>%
+  filter(!is.na(improvement_plan),
+         improvement_plan != "") %>%
+  separate_rows(improvement_plan, sep = ",") %>%
+  mutate(improvement_plan = str_trim(improvement_plan)) %>%
+  count(improvement_plan, sort = TRUE)
+#Plot the results
+ggplot(improve_plot,
+       aes(x = reorder(improvement_plan, n),
+           y = n)) +
+  geom_col() +
+  coord_flip() +
+  labs(
+    title = "Recommended Improvement Actions",
+    x = NULL,
+    y = "Number of Monitoring Wells"
+  ) +
+  theme_minimal(base_size = 12)
+```
+
+## License
+
+Data are available as
+[CC-BY](https://github.com/openwashdata/%7B%7B%7Bpackagename%7D%7D%7D/blob/main/LICENSE.md).
+
+## Citation
+
+Please cite this package using:
+
+```{r}
+citation("gwinfraassess")
+```
