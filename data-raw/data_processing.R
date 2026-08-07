@@ -14,7 +14,6 @@ library(lubridate)
 library(ggplot2)
 library(maps)
 
-
 # Load Data --------------------------------------------------------------------
 data_in <- readr::read_csv("data-raw/Groundwater Monitoring Infrastructure Assessment Tool.csv")
 
