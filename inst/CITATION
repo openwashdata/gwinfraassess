@@ -11,4 +11,4 @@ bibentry(bibtype = "Misc",
          url = "https://github.com/openwashdata/gwinfraassess",
          abstract = "The Groundwater Monitoring Infrastructure Assessment Dataset (2022) is an open dataset published by BASEflow Malawi. The dataset contains field observations collected during an assessment of groundwater monitoring infrastructure in Nkhotakota District, Malawi. It includes information on monitoring well characteristics, groundwater level measurements, monitoring equipment, site accessibility, infrastructure condition, community awareness, and recommended maintenance and rehabilitation actions.",
          keywords = "open data,washdata,groundwater,groundwater monitoring,monitoring wells,water levels,Malawi",
-         version = "0.0.0.9000")
+         version = "1.0.1")
