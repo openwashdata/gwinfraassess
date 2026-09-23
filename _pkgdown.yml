@@ -1,5 +1,4 @@
-
-url: https://github.com/openwashdata/gwinfraassess
+url: https://openwashdata.github.io/gwinfraassess/
 template:
   bootstrap: 5
   includes:
