@@ -7,12 +7,11 @@ cff-version: 1.2.0
 message: 'To cite package "gwinfraassess" in publications use:'
 type: dataset
 license: CC-BY-4.0
-title: 'gwinfraassess: The Groundwater Monitoring Infrastructure Assessment Dataset,
-  Nkhotakota - Malawi (2022)'
+title: 'gwinfraassess: Groundwater Monitoring Wells, Nkhotakota, Malawi 2022-2023'
 version: 1.0.1
 doi: 10.5281/zenodo.21839342
-abstract: The Groundwater Monitoring Infrastructure Assessment Dataset (2022) is an
-  open dataset published by BASEflow Malawi. The dataset contains field observations
+abstract: The Groundwater Monitoring Infrastructure Assessment Dataset (2022 to 2023)
+  is an open dataset published by BASEflow Malawi. The dataset contains field observations
   collected during an assessment of groundwater monitoring infrastructure in Nkhotakota
   District, Malawi. It includes information on monitoring well characteristics, groundwater
   level measurements, monitoring equipment, site accessibility, infrastructure condition,

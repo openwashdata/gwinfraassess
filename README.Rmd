@@ -22,7 +22,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# The Groundwater Monitoring Infrastructure Assessment Dataset, Nkhotakota - Malawi (2022)
+# Groundwater Monitoring Wells, Nkhotakota, Malawi 2022-2023
 
 <!-- badges: start -->
 [![DOI](https://zenodo.org/badge/1326500897.svg)](https://doi.org/10.5281/zenodo.21839342)
@@ -32,10 +32,10 @@ knitr::opts_chunk$set(
 [![R-CMD-check](https://github.com/openwashdata/gwinfraassess/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/openwashdata/gwinfraassess/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-The Groundwater Monitoring Infrastructure Assessment Dataset (2022) is
+The Groundwater Monitoring Infrastructure Assessment Dataset (2022 to 2023) is
 an open dataset published by BASEflow Malawi. The dataset contains field
 observations collected during an assessment of groundwater monitoring
-infrastructure in Nkhotakota District, Malawi in 2022. It includes
+infrastructure in Nkhotakota District, Malawi in 2022 and 2023. It includes
 information on monitoring well characteristics, groundwater level
 measurements, monitoring equipment, site accessibility, infrastructure
 condition, community awareness, and recommended maintenance and
@@ -132,7 +132,7 @@ read_csv("data-raw/dictionary.csv") |>
 
 ## Data
 
-The package provides access to The Groundwater Monitoring Infrastructure Assessment Dataset collected by BASEflow in 2022, in Nkhotakota district.
+The package provides access to The Groundwater Monitoring Infrastructure Assessment Dataset collected by BASEflow in 2022 and 2023, in Nkhotakota district.
 
 ```{r}
 library(gwinfraassess)
