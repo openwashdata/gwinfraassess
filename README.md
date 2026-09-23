@@ -118,7 +118,7 @@ gwinfraassess |>
   gt::as_raw_html()
 ```
 
-<div id="xsbzvpogvg" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="cepqkxgxhs" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
   &#10;  <table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false" style="-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; display: table; border-collapse: collapse; line-height: normal; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;" bgcolor="#FFFFFF">
   <thead style="border-style: none;">
     <tr class="gt_col_headings" style="border-style: none; border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3;">
@@ -1132,7 +1132,7 @@ ggplot(improve_plot,
 ## License
 
 Data are available as
-[CC-BY](https://github.com/openwashdata/%7B%7B%7Bpackagename%7D%7D%7D/blob/main/LICENSE.md).
+[CC-BY](https://github.com/openwashdata/gwinfraassess/blob/main/LICENSE.md).
 
 ## Citation
 
@@ -1142,18 +1142,22 @@ Please cite this package using:
 citation("gwinfraassess")
 #> To cite package 'gwinfraassess' in publications use:
 #> 
-#>   Mhango E (2026). _gwinfraassess: The Groundwater Monitoring
-#>   Infrastructure Assessment Dataset, Nkhotakota - Malawi (2022)_. R
-#>   package version 0.0.0.9000,
+#>   Mhango E (2026). "gwinfraassess: The Groundwater Monitoring
+#>   Infrastructure Assessment Dataset, Nkhotakota - Malawi (2022)."
+#>   doi:10.5281/zenodo.21839342
+#>   <https://doi.org/10.5281/zenodo.21839342>.
 #>   <https://github.com/openwashdata/gwinfraassess>.
 #> 
 #> A BibTeX entry for LaTeX users is
 #> 
-#>   @Manual{,
+#>   @Misc{mhango:2026,
 #>     title = {gwinfraassess: The Groundwater Monitoring Infrastructure Assessment Dataset, Nkhotakota - Malawi (2022)},
 #>     author = {Emmanuel Mhango},
 #>     year = {2026},
-#>     note = {R package version 0.0.0.9000},
+#>     doi = {10.5281/zenodo.21839342},
 #>     url = {https://github.com/openwashdata/gwinfraassess},
+#>     abstract = {The Groundwater Monitoring Infrastructure Assessment Dataset (2022) is an open dataset published by BASEflow Malawi. The dataset contains field observations collected during an assessment of groundwater monitoring infrastructure in Nkhotakota District, Malawi. It includes information on monitoring well characteristics, groundwater level measurements, monitoring equipment, site accessibility, infrastructure condition, community awareness, and recommended maintenance and rehabilitation actions.},
+#>     keywords = {open data,washdata,groundwater,groundwater monitoring,monitoring wells,water levels,Malawi},
+#>     version = {0.0.0.9000},
 #>   }
 ```
