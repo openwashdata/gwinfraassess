@@ -48,7 +48,12 @@
   "publisher": {
     "@type": "Organization",
     "name": "openwashdata",
-    "url": "https://github.com/openwashdata"
+    "url": "https://openwashdata.org"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "openwashdata",
+    "url": "https://openwashdata.org/pages/gallery/data/"
   },
   "spatialCoverage": {
     "@type": "Place",
@@ -298,6 +303,7 @@
 <li class="nav-item"><form class="form-inline" role="search">
  <input class="form-control" type="search" name="search-input" id="search-input" autocomplete="off" aria-label="Search site" placeholder="Search for" data-search-index="search.json">
 </form></li>
+<li class="nav-item"><a class="external-link nav-link" href="https://openwashdata.org" aria-label="openwashdata website">openwashdata.org</a></li>
 <li class="nav-item"><a class="external-link nav-link" href="https://github.com/openwashdata/gwinfraassess/" aria-label="GitHub"><span class="fa fab fa-github fa-lg"></span></a></li>
       </ul>
 </div>
@@ -312,6 +318,7 @@
 <!-- badges: start -->
 
 <p><a href="https://github.com/openwashdata/gwinfraassess/actions/workflows/R-CMD-check.yaml" class="external-link"><img src="https://github.com/openwashdata/gwinfraassess/actions/workflows/R-CMD-check.yaml/badge.svg" alt="R-CMD-check"></a> <!-- badges: end --></p>
+<p>A data package published by <a href="https://openwashdata.org" class="external-link">openwashdata</a>.</p>
 <p>The Groundwater Monitoring Infrastructure Assessment Dataset (2022 to 2023) is an open dataset published by BASEflow Malawi. The dataset contains field observations collected during an assessment of groundwater monitoring infrastructure in Nkhotakota District, Malawi in 2022 and 2023. It includes information on monitoring well characteristics, groundwater level measurements, monitoring equipment, site accessibility, infrastructure condition, community awareness, and recommended maintenance and rehabilitation actions.</p>
 <p>The dataset captures key attributes of groundwater monitoring sites, including well depth, static groundwater level, measurement methods, level logger and barometric logger availability, equipment condition, site accessibility, monitoring well purpose, vandalism risks, nearby water source types, and infrastructure improvement recommendations. Together, these data provide a comprehensive assessment of the operational status and maintenance needs of groundwater monitoring infrastructure in the study area.</p>
 <p>This dataset supports evidence-based groundwater management and can be used to evaluate the condition of monitoring infrastructure, identify maintenance priorities, strengthen groundwater monitoring networks, and support sustainable groundwater resource management in Malawi.</p>
@@ -1450,16 +1457,23 @@ Recommended actions to improve the monitoring well and its associated infrastruc
 </ul>
 </div>
 
+<div class="openwashdata">
+<h2 data-toc-skip>openwashdata</h2>
+<ul class="list-unstyled">
+<li><p>This package is part of <a href="https://openwashdata.org" class="external-link">openwashdata</a>. Browse the <a href="https://openwashdata.org/pages/gallery/data/" class="external-link">data catalogue</a> or get the <a href="https://openwashdata.org/pages/newsletter/" class="external-link">newsletter</a>.</p></li>
+</ul>
+</div>
+
   </aside>
 </div>
 
 
     <footer><div class="pkgdown-footer-left">
-  <p>Crafted by Emmanuel Mhango.</p>
+  <p>Crafted by Emmanuel Mhango. Published by <a href="https://openwashdata.org" class="external-link">openwashdata</a>, a project of <a href="https://ghe.ethz.ch/" class="external-link">Global Health Engineering</a> at ETH Zurich.</p>
 </div>
 
 <div class="pkgdown-footer-right">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.2.1.</p>
+  <p>Package built with <a href="https://openwashdata.github.io/washr/" class="external-link">washr</a> 1.2.1. Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.2.1.</p>
 </div>
 
     </footer>
