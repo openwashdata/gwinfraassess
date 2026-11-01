@@ -2,8 +2,6 @@
 
 [![R-CMD-check](https://github.com/openwashdata/gwinfraassess/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/openwashdata/gwinfraassess/actions/workflows/R-CMD-check.yaml)
 
-A data package published by [openwashdata](https://openwashdata.org).
-
 The Groundwater Monitoring Infrastructure Assessment Dataset (2022 to
 2023) is an open dataset published by BASEflow Malawi. The dataset
 contains field observations collected during an assessment of
@@ -209,6 +207,8 @@ Data are available as
 [CC-BY](https://github.com/openwashdata/gwinfraassess/blob/main/LICENSE.md).
 
 ## Citation
+
+Published by openwashdata, <https://openwashdata.org>.
 
 Please cite this package using:
 
